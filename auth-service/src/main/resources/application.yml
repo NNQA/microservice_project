@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: auth-service
+
+server:
+  port: ${AUTH_SERVICE_PORT:8081}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
